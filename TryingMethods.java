@@ -67,4 +67,13 @@ public class TryingMethods {
         }
         return accumulator;
     }
+
+    public static int sumOfEvenNumbers() {
+        int evenNumbers = 0;
+        for (int i = 14; i < 104; i += 2) {
+            evenNumbers += i;
+        }
+        return evenNumbers;
+
+    }
 }
