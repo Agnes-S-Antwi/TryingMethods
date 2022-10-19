@@ -8,6 +8,9 @@ public class TryingMethods {
         TryingMethods dayObject = new TryingMethods();
         String myDay = dayObject.daysOfTheWeek(4);
         System.out.println(dayObject.daysOfTheWeek(1) + myDay);
+
+        TryingMethods weatherFinder = new TryingMethods();
+        weatherFinder.season("winter");
     }
 
     public String daysOfTheWeek(int day) {
@@ -38,5 +41,17 @@ public class TryingMethods {
                 break;
         }
         return nameOfDay;
+    }
+
+    public void season(String weather) {
+        if (weather == "winter") {
+            System.out.println("Snowy");
+        } else if (weather == "autumn") {
+            System.out.println("Windy");
+        } else if (weather == "harmattan") {
+            System.out.println("Dry");
+        } else {
+            System.out.println("Enter a different weather condition");
+        }
     }
 }
