@@ -13,6 +13,8 @@ public class TryingMethods {
         weatherFinder.season("winter");
 
         System.out.println("Sum of numbers from 0 to 1000: " + sumUpto1000());
+
+        System.out.println("Sum of even numbers between 12 and 103: " + sumOfEvenNumbers());
     }
 
     public String daysOfTheWeek(int day) {
