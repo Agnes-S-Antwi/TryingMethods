@@ -11,6 +11,8 @@ public class TryingMethods {
 
         TryingMethods weatherFinder = new TryingMethods();
         weatherFinder.season("winter");
+
+        System.out.println("Sum of numbers from 0 to 1000: " + sumUpto1000());
     }
 
     public String daysOfTheWeek(int day) {
@@ -53,5 +55,16 @@ public class TryingMethods {
         } else {
             System.out.println("Enter a different weather condition");
         }
+    }
+
+    public static int sumUpto1000() {
+
+        int counter = 0;
+        int accumulator = 0;
+        while (counter < 1000) {
+            accumulator += counter;
+            counter++;
+        }
+        return accumulator;
     }
 }
